@@ -1,7 +1,53 @@
-# brain_cancer_gene_expression
-Project Theme:
-This project involves data processing, exploratory data analysis, and machine learning classification using Python and various libraries for the brain cancer gene expression data
+# Brain Cancer RNA-Seq Classification Using Machine Learning
 
-Description:
-          The code handles gene data related to brain cancer. The process begins with data preparation, followed by an exploration of the target distribution and features, dimensionality reduction, dataset splitting, training of several machine learning models (Decision Tree, SVM, Random Forest), performance evaluation, and a majority vote to combine predictions for increased accuracy. In essence, it's a thorough procedure for dissecting this dataset, creating models, and using group techniques to improve prediction accuracy.
-                To sum it up, this code illustrates a methodical approach to managing gene data related to brain cancer. To increase prediction accuracy, it applies machine learning models and an ensemble technique in addition to preprocessing and exploring the dataset. In the context of brain cancer gene categorization, this all-encompassing method facilitates a thorough understanding of the data and leverages the strength of numerous models for more reliable predictions.
+## Overview
+This project implements a machine learning-based classification pipeline for brain cancer using RNA-seq gene expression data. The workflow integrates preprocessing, dimensionality reduction, supervised learning, and ensemble modeling to improve predictive performance.
+
+## Objectives
+- Perform exploratory data analysis (EDA) on high-dimensional gene expression data
+- Apply dimensionality reduction techniques
+- Train multiple classification models
+- Evaluate model performance using standard metrics
+- Improve predictive accuracy using ensemble methods
+
+## Methods
+
+### Data Processing
+- Data cleaning and normalization
+- Target distribution analysis
+- Feature scaling
+
+### Dimensionality Reduction
+- Principal Component Analysis (PCA)
+
+### Machine Learning Models
+- Decision Tree
+- Support Vector Machine (SVM)
+- Random Forest
+- Majority Vote Ensemble Classifier
+
+### Model Evaluation
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+
+## Key Findings
+- Random Forest demonstrated the highest standalone performance.
+- Ensemble modeling improved classification robustness.
+- Dimensionality reduction improved computational efficiency while retaining biological signal.
+
+## Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Seaborn
+
+## Reproducibility
+To reproduce results:
+```bash
+pip install -r requirements.txt
+python src/classification_pipeline.py
